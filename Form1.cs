@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 
@@ -17,12 +18,11 @@ namespace CS2024 {
         private void runButton_Click(object sender, EventArgs e) {
             Running = !Running;
             if (Running) {
-                string alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+                string ImpactNumbers = Regex.Replace(ImpactForceBox.Text, "[^0-9.]", "");
+                string VelocityNumbers = Regex.Replace(VelocityBox.Text, "[^0-9.]", "");
 
-                foreach(char character in alphabet) {
-                    ImpactForceBox.Text.Replace(character.ToString(), string.Empty);
-                    VelocityBox.Text.Replace(character.ToString(), string.Empty);
-                }
+                ImpactForceBox.Text = ImpactNumbers;
+                VelocityBox.Text = VelocityNumbers;
 
                 if (ImpactForceBox.Text == string.Empty) {
                     ImpactForceBox.Text = "0";
