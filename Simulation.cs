@@ -30,9 +30,6 @@ namespace Simulation {
                 Velocity = Velocity / 3.6f;
                 Force = Force - 0.3f;
 
-                if (Velocity > 33.33) {
-                    //Velocity = 33.33f;
-                }
                 if (Velocity < 4) {
                     if (Force > 0) {
                         collisionChance = 100;

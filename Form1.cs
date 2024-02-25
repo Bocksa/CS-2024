@@ -17,10 +17,23 @@ namespace CS2024 {
         private void runButton_Click(object sender, EventArgs e) {
             Running = !Running;
             if (Running) {
-                if (ImpactForceBox.Text == null) {
+                string alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+
+                foreach(char character in alphabet) {
+                    ImpactForceBox.Text.Replace(character.ToString(), string.Empty);
+                    VelocityBox.Text.Replace(character.ToString(), string.Empty);
+                }
+
+                if (ImpactForceBox.Text == string.Empty) {
                     ImpactForceBox.Text = "0";
                 }
-                var simulation = new Simulation.Simulation(trackBar1.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(textBox1.Text));
+
+                if (VelocityBox.Text == string.Empty) {
+                    VelocityBox.Text = "0";
+                }
+
+                var simulation = new Simulation.Simulation(trackBar1.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
+
                 Results.Text = $"Chance of crash: {simulation.Start().ToString("0.00")}%";
                 runButton.Text = "Reload Simulation";
             } else {
