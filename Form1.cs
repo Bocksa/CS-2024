@@ -34,7 +34,7 @@ namespace CS2024 {
 
                 var simulation = new Simulation.Simulation(trackBar1.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
 
-                Results.Text = $"Chance of crash: {simulation.Start().ToString("0.00")}%";
+                Results.Text = $"Chance of crash: {(simulation.Start() * 100).ToString("0.00")}%";
                 runButton.Text = "Reload Simulation";
             } else {
                 runButton.Text = "Run Simulation";
