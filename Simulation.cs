@@ -7,11 +7,6 @@ namespace Simulation {
         private float Velocity { get; set; }
 
         // Initialisation of the Class \\
-        public Simulation(int angleOfImpact, float ForceOnCar) {
-            AngleOfImpact = angleOfImpact;
-            ImpactForce = ForceOnCar;
-            Velocity = 0;
-        }
         public Simulation(int angleOfImpact, float ForceOnCar, float velocity) {
             AngleOfImpact = angleOfImpact;
             ImpactForce = ForceOnCar;
@@ -20,7 +15,7 @@ namespace Simulation {
 
         // Starts the simulation \\
         public float Start() {
-            float Force = ImpactForce;
+            float Force = ImpactForce - 0.3f;
             double eq = ((120 * Force) / Velocity) * Math.Abs(Math.Cos((AngleOfImpact - 90) * Math.PI / 720)); // Calculates the percentage chance of a car crash
             float collisionChance = (float)eq; // Converting the equation from a double to a float
 
