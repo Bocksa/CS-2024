@@ -3,18 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-      }
-    }
-  </style>
+  <title>141190 - Cian McNamara</title>
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
 </head>
 <body>
-  <div class="lg:content-auto">
-    <h1>141190 - Cian McNamara</h1>
-  </div>
+    <ul role="menubar" style="margin-bottom: 10px;">
+        <li role="menuitem" tabindex="0" aria-haspopup="true">
+            Sections
+            <ul role="menu">
+                <li role="menuitem">
+                    <a href="#meeting-the-brief">
+                        Meeting the Brief
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#investigation-and-plan">
+                        Investigation and Plan
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#design">
+                        Design
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#implementation">
+                        Implementation
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#testing">
+                        Testing
+                    </a>
+                </li>
+                <li role="menuitem">
+                    <a href="#evaluation">
+                        Evaluation
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="window glass active" style="max-width: 40%; margin-left: 30%; margin-top: 5px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Report</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="window-body has-space">
+        <div id="meeting-the-brief" style="margin-left: 5px;">
+            <h4>Meeting the Brief</h4>
+            <p>
+                <video width="600" height="409" id="videoPlayer" controls="controls">
+                    <source src="mtb.mp4" type="video/mp4">
+                </video>   
+            </p>
+        </div>
+        <div id="investigation-and-plan" style="margin-left: 5px;">
+            <h4>Investigation and Plan</h4>
+            <p>fie</p>
+        </div>
+        <div id="design" style="margin-left: 5px;">
+            <h4>Design</h4>
+            <p>fo</p>
+        </div>
+        <div id="implementation" style="margin-left: 5px;">
+            <h4>Implementation</h4>
+            <p>fum</p>
+        </div>
+        <div id="testing" style="margin-left: 5px;">
+            <h4>Testing</h4>
+            <p>foo</p>
+        </div>
+        <div id="evaluation" style="margin-left: 5px;">
+            <h4>Evaluation</h4>
+            <p>bar</p>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
