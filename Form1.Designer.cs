@@ -44,6 +44,7 @@
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(301, 45);
             this.trackBar1.TabIndex = 0;
+            this.trackBar1.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
@@ -53,6 +54,7 @@
             this.runButton.Name = "runButton";
             this.runButton.Size = new System.Drawing.Size(119, 45);
             this.runButton.TabIndex = 1;
+            this.runButton.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.runButton.Text = "Run Simulation";
             this.runButton.UseVisualStyleBackColor = true;
             this.runButton.Click += new System.EventHandler(this.runButton_Click);
@@ -64,6 +66,7 @@
             this.DegreeLabel.Name = "DegreeLabel";
             this.DegreeLabel.Size = new System.Drawing.Size(56, 13);
             this.DegreeLabel.TabIndex = 2;
+            this.DegreeLabel.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.DegreeLabel.Text = "0 Degrees";
             this.DegreeLabel.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -74,6 +77,7 @@
             this.ImpactForceBox.Name = "ImpactForceBox";
             this.ImpactForceBox.Size = new System.Drawing.Size(158, 20);
             this.ImpactForceBox.TabIndex = 3;
+            this.ImpactForceBox.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.ImpactForceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.ImpactForceBox.TextChanged += new System.EventHandler(this.ImpactForceBox_TextChanged);
             // 
@@ -84,6 +88,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 13);
             this.label1.TabIndex = 4;
+            this.label1.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.label1.Text = "Enter an impact force in terms of G";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
@@ -99,6 +104,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Results
@@ -117,6 +123,7 @@
             this.VelocityBox.Name = "VelocityBox";
             this.VelocityBox.Size = new System.Drawing.Size(158, 20);
             this.VelocityBox.TabIndex = 7;
+            this.VelocityBox.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.VelocityBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.VelocityBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -127,6 +134,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 13);
             this.label2.TabIndex = 8;
+            this.label2.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.label2.Text = "Enter a velocity in km/h";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -146,6 +154,7 @@
             this.Controls.Add(this.trackBar1);
             this.MaximizeBox = false;
             this.Name = "Main";
+            this.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.Text = "2024-219-3-EV-141190";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
