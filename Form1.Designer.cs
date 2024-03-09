@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.CollisionAngle = new System.Windows.Forms.TrackBar();
             this.runButton = new System.Windows.Forms.Button();
             this.DegreeLabel = new System.Windows.Forms.Label();
             this.ImpactForceBox = new System.Windows.Forms.TextBox();
@@ -33,20 +33,20 @@
             this.Results = new System.Windows.Forms.Label();
             this.VelocityBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CollisionAngle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // trackBar1
+            // CollisionAngle
             // 
-            this.trackBar1.Location = new System.Drawing.Point(487, 406);
-            this.trackBar1.Maximum = 180;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(301, 45);
-            this.trackBar1.TabIndex = 0;
-            this.trackBar1.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
-            this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.CollisionAngle.Location = new System.Drawing.Point(487, 406);
+            this.CollisionAngle.Maximum = 180;
+            this.CollisionAngle.Name = "CollisionAngle";
+            this.CollisionAngle.Size = new System.Drawing.Size(301, 45);
+            this.CollisionAngle.TabIndex = 0;
+            this.CollisionAngle.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
+            this.CollisionAngle.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.CollisionAngle.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // runButton
             // 
@@ -110,7 +110,7 @@
             // Results
             // 
             this.Results.AutoSize = true;
-            this.Results.Location = new System.Drawing.Point(344, 366);
+            this.Results.Location = new System.Drawing.Point(330, 366);
             this.Results.Name = "Results";
             this.Results.Size = new System.Drawing.Size(0, 13);
             this.Results.TabIndex = 6;
@@ -151,13 +151,13 @@
             this.Controls.Add(this.ImpactForceBox);
             this.Controls.Add(this.DegreeLabel);
             this.Controls.Add(this.runButton);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.CollisionAngle);
             this.MaximizeBox = false;
             this.Name = "Main";
             this.Tag = "yMIJAnicAb0CQv3EDQMACgGMNqxD/Pm2OwHLjXUAZepB1FRoaXMgcHJvamVjdCB3";
             this.Text = "2024-219-3-EV-141190";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CollisionAngle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,7 +166,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar CollisionAngle;
         private System.Windows.Forms.Button runButton;
         private System.Windows.Forms.Label DegreeLabel;
         private System.Windows.Forms.TextBox ImpactForceBox;

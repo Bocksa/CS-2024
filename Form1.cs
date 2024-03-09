@@ -33,7 +33,7 @@ namespace CS2024 {
                     VelocityBox.Text = "0";
                 }
 
-                var simulation = new Simulation.Simulation(trackBar1.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
+                var simulation = new Simulation.Simulation(CollisionAngle.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
 
                 Results.Text = $"Chance of crash: {(simulation.Start() * 100).ToString("0.00")}%";
                 runButton.Text = "Reload Simulation";
@@ -43,7 +43,7 @@ namespace CS2024 {
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e) {
-            int angle = trackBar1.Value;
+            int angle = CollisionAngle.Value;
             DegreeLabel.Text = $"{angle.ToString()} Degrees";
         }
 

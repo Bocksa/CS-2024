@@ -14,8 +14,8 @@ namespace Simulation {
         // Initialisation of the Class \\
         public Simulation(int angleOfImpact, float ForceOnCar, float velocity) {
             AngleOfImpact = angleOfImpact;
-            ImpactForce = ForceOnCar;
-            Velocity = velocity;
+            ImpactForce = Math.Abs(ForceOnCar);
+            Velocity = Math.Abs(velocity);
         }
 
         // Starts the simulation \\
