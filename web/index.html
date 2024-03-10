@@ -8,23 +8,25 @@
   <link rel="stylesheet" href="https://unpkg.com/7.css">
 </head>
 <body>
-    <ul role="menubar" style="margin-bottom: 10px;">
+    <ul role="menubar" style="margin-bottom: 10px; position: fixed;">
         <li role="menuitem" tabindex="0" aria-haspopup="true">
-            Sections
+            <p>
+                <img src="images/win7_start.png" style="width: 30px; height: 30px;">
+            </p>
             <ul role="menu">
                 <li role="menuitem">
-                    <a href="#meeting-the-brief">
+                    <a href="#">
                         Meeting the Brief
                     </a>
                 </li>
                 <li role="menuitem">
-                    <a href="#investigation-and-plan">
-                        Investigation and Plan
+                    <a href="#investigation">
+                        Investigation
                     </a>
                 </li>
                 <li role="menuitem">
-                    <a href="#design">
-                        Design
+                    <a href="#plan-and-design">
+                        Plan and Design
                     </a>
                 </li>
                 <li role="menuitem">
@@ -33,8 +35,8 @@
                     </a>
                 </li>
                 <li role="menuitem">
-                    <a href="#testing">
-                        Testing
+                    <a href="#create">
+                        Create
                     </a>
                 </li>
                 <li role="menuitem">
@@ -68,20 +70,52 @@
                 </video>   
             </p>
         </div>
-        <div id="investigation-and-plan" style="margin-left: 5px; margin-right: 5px;">
-            <h4>Investigation and Plan</h4>
-            <p>fie</p>
+        <div id="investigation" style="margin-left: 5px; margin-right: 5px;">
+            <h4>Investigation</h4>
+            <p>Upon reading the requirements in the brief, I began thinking of ideas. One of the first that came to mind would be car crash detection, 
+                as I had seen the recent developments in crash avoidance in Tesla cars. With the idea of these cars with cameras in mind, I began to think of a project regarding car crashes. 
+                I would then investigate driving data from cars and the expected bounds within which they should operate. 
+                To do this, I looked at <a href="https://www.gofar.co/" target="_blank">GoFar's</a> data (see below) to get some expected conditions for driving.           
+                <br>
+                <img src="images/gofar1.jpg">
+                <br>
+                Upon researching car crashes more, I realised they all had three things that could help me standardise an output and see if a crash occurred. 
+                The G-force of the crash, the angle at which the impact occurred, and the speed at which the car was travelling. 
+                I talked to a director of data-enabled businesses in Cork to find out more about what could be useful for companies wanting to use a product such as this. 
+                When I went into this project, I realised there were two main customers. 
+                Consumers and enterprises I went for Enterprise as I believed it would be a more interesting market to try to gain access to; through this, the product would have to be modular instead of being a static, 
+                unexpandable project. 
+                Through my research, I learned to use tools such as <a href="https://desmos.com/calculator" target="_blank">Desmos</a>, the online graphing calculator, 
+                to test my equations for my model and <a href="https://learn.microsoft.com/en-us/dotnet/desktop/winforms/overview/?view=netdesktop-8.0" target="_blank">Winforms</a> to create a UI.
+                <br><br>
+            </p>
         </div>
-        <div id="design" style="margin-left: 5px; margin-right: 5px;">
-            <h4>Design</h4>
-            <p>fo</p>
+        <div id="plan-and-design" style="margin-left: 5px; margin-right: 5px;">
+            <h4>Plan and Design</h4>
+            <p>My first objective would be to make the user interface for the advanced requirements model. After this I would aim to interact with the UI through code.
+                Once completed I would start on my embedded system, by creating a small battery holder and then programming the BBC Micro:bit to begin reading the accelerometer readings.
+                Once this was completed, I began forming equations that followed the data I found during my research.
+                To plan this project I would create flowcharts using Visio which is part of the Microsoft Office suite of software.
+                The first flowchart I would create would be for my embedded system. When creating this system I kept in mind ease of use and how it had to be modular if integrated in a bigger product,
+                as such I knew I would have to take advantage of the digital output ports on the Micro:bit.
+                With these ports the other developer working with my system would be able to add on their own modules such as their own SOS system,
+                or if the car has cameras, save a video recording of events leading up to the collision.
+                <br>
+                <img src="images/flowchart.png">
+                <br>
+                Upon the completion of the embedded system I would start on the design for the computer model's user interface. This would prove to be the longest part of the project.
+                Over two weeks I would develop the equations I used until I got my final <a href="https://www.desmos.com/calculator/hpzjkfoenn">equation</a> that gave an accurate approximation of what my research data gave me.
+                <br>
+                <img src="images/graph.png" style="width: 70%; height: 70%;">
+                <br>
+            </p>
         </div>
         <div id="implementation" style="margin-left: 5px; margin-right: 5px;">
             <h4>Implementation</h4>
             <p>fum</p>
         </div>
-        <div id="testing" style="margin-left: 5px; margin-right: 5px;">
-            <h4>Testing</h4>
+        <div id="create" style="margin-left: 5px; margin-right: 5px;">
+            <h4>Create</h4>
             <p>foo</p>
         </div>
         <div id="evaluation" style="margin-left: 5px; margin-right: 5px;">

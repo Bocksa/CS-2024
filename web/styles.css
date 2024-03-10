@@ -1,13 +1,10 @@
-body {
-    background-color: #1C1C1C;
-    color: #e7e7e7;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.center-text {
-    text-align: center;
-}
-
 h4 {
     font-weight: normal;
+}
+
+body {
+    background-image: url('images/win7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
