@@ -7,12 +7,12 @@ using Microsoft.Scripting.Hosting;
 
 namespace Simulation {
     class Simulation {
-        private int AngleOfImpact { get; set; }
+        private uint AngleOfImpact { get; set; }
         private float ImpactForce { get; set; }
         private float Velocity { get; set; }
 
         // Initialisation of the Class \\
-        public Simulation(int angleOfImpact, float ForceOnCar, float velocity) {
+        public Simulation(uint angleOfImpact, float ForceOnCar, float velocity) {
             AngleOfImpact = angleOfImpact;
             ImpactForce = Math.Abs(ForceOnCar);
             Velocity = Math.Abs(velocity);

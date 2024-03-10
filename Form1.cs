@@ -33,7 +33,7 @@ namespace CS2024 {
                     VelocityBox.Text = "0";
                 }
 
-                var simulation = new Simulation.Simulation(CollisionAngle.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
+                var simulation = new Simulation.Simulation((uint)CollisionAngle.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
 
                 Results.Text = $"Chance of crash: {(simulation.Start() * 100).ToString("0.00")}%";
                 runButton.Text = "Reload Simulation";
