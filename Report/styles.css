@@ -1,0 +1,10 @@
+h4 {
+    font-weight: normal;
+}
+
+body {
+    background-image: url('images/win7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
