@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -19,13 +18,13 @@ namespace CS2024 {
         private void runButton_Click(object sender, EventArgs e) {
             Running = !Running;
             if (Running) {
-                string ImpactNumbers = Regex.Replace(ImpactForceBox.Text, "[^0-9.]", "");
+                string ImpactNumbers = Regex.Replace(ImpactForceBox.Text, "[^0-9.]", ""); // Removes all characters bar the numbers zero to 9 and a decimal point
                 string VelocityNumbers = Regex.Replace(VelocityBox.Text, "[^0-9.]", "");
 
-                ImpactForceBox.Text = ImpactNumbers;
+                ImpactForceBox.Text = ImpactNumbers; // Sets the input text box text to its appropriate variable
                 VelocityBox.Text = VelocityNumbers;
 
-                if (ImpactForceBox.Text == string.Empty) {
+                if (ImpactForceBox.Text == string.Empty) { // Sanity checking the inputs to see if any input is present, if not default to 0
                     ImpactForceBox.Text = "0";
                 }
 
@@ -33,9 +32,11 @@ namespace CS2024 {
                     VelocityBox.Text = "0";
                 }
 
-                var simulation = new Simulation.Simulation((uint)CollisionAngle.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text));
+                //Initialize Simulation
+                var simulation = new Simulation.Simulation((uint)CollisionAngle.Value, Convert.ToSingle(ImpactForceBox.Text), Convert.ToSingle(VelocityBox.Text)); 
 
-                Results.Text = $"Chance of crash: {(simulation.Start() * 100).ToString("0.00")}%";
+                // Run simulation and set results text
+                Results.Text = $"Chance of crash: {(simulation.Start() * 100).ToString("0.00")}%"; // Convert probability to a percentage which the simulation returns
                 runButton.Text = "Reload Simulation";
             } else {
                 runButton.Text = "Run Simulation";
